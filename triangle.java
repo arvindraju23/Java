@@ -1,19 +1,18 @@
-// Find Area of triangle.
+import java.util.Scanner;
 
-import java.util.*;
-import java.lang.*;
+public class triangle {
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        float base,height, area;
+        System.out.print("Enter Base: ");
+        base=sc.nextFloat();
+        System.out.print("Enter the height: ");
+        height=sc.nextFloat();
 
-class triangle
-{
-public static void main(String args [] )
-{
-Scanner sc= new Scanner (System.in);
-float b, h, area;
-System.out.println("Enter base");
-b=sc.nextFloat();
-System.out.println("Enter height");
-h=sc.nextFloat();
-area= (b*h)/2;
-System.out.println("Area of Triangle " +area);
-}
+        area=(base+height)/2;
+        System.out.print("Area of triangle is: "+area);
+        System.out.println();
+
+    }
+    
 }
